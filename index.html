@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Widget Test</title>
+</head>
+<body>
+    <h1>Welcome to My Chat Widget Test</h1>
+    <p>This is a simple page to test the chat widget integration.</p>
+
+    <!-- Option 2: Chat Widget Code -->
+    <script>
+    (function (w, d, e, x) {
+        w[e] = function () {
+            w.cbk = w.cbk || [];
+            w.cbk.push(arguments);
+        };
+        x = d.createElement('script');
+        x.async = true;
+        x.id = 'zhichiScript';
+        x.src = 'https://sg.sobot.io/chat/frame/v6/entrance.js?sysnum=a86f845960794b9094e1287ad35ff70d';
+        d.body.appendChild(x);
+    })(window, document, 'zc');
+    zc('config',{
+        channelid: 2
+    });
+    </script>
+</body>
+</html>
